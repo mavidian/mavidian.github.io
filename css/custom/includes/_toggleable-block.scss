@@ -1,0 +1,29 @@
+#toggleable-block {
+
+    // Collapsable section title
+    button { // anchor look-alike
+        background:none !important;
+        border:none; 
+        padding:0 !important;
+        font-family: $headings-font-family;
+        font-size: $h4-font-size;
+        font-weight: $headings-font-weight;
+        color: $primary;
+        cursor: pointer;
+        box-shadow: none;
+
+        &:hover {
+            color: $info;
+            cursor: pointer;
+            border: none;
+        }
+
+        // Show/hide open/closed icons
+        &[aria-expanded="true"] span.collapsed, &[aria-expanded="false"] span.expanded {
+            display: none;
+        }
+        &[aria-expanded="true"] span.expanded, &[aria-expanded="false"] span.collapsed {
+            display: unset;
+        }
+    }
+}

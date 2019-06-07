@@ -1,0 +1,31 @@
+# Site settings
+encoding: utf-8
+lang: en-US
+title: "Mavidian"
+# logo: "assets/.."
+email: wojtekd@mavian.com
+author: Wojtek Dziegielewski
+description: "Mavidian Technologies offers information technology products and services focusing on organizations in the healthcare payer industry."
+url: http://www.mavidian.com
+baseurl: ""
+# repo: "https://github.com/mavidian/.."
+
+# Build settings:
+permalink: /:year/:month/:day/:title:output_ext
+sass:
+  sass_dir: css
+# The global permalink above will locate posts solely based
+# on dates (irrespective of categories).
+# For pages (not posts), it's the same as /:title:output_ext
+# Can be overrulled by permalink in front matter.
+# Note that the date in front matter trumps the date in post file name (if different.)
+
+# Social icons:
+show_social_icons: true
+github_username: mavidian
+twitter_username: mavidian
+
+# Plugins:
+plugins: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blog/page:num/"

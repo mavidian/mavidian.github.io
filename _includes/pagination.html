@@ -1,0 +1,21 @@
+<div id="paginator" class="container">
+    <div class="row">
+        <div class="col text-center">
+            {% if paginator.previous_page %}
+                {% if paginator.page == 2 %}  <!-- special case to go back to original/first page -->
+                    <a class="btn btn-primary" href="{{ site.paginate_path | remove: '/page:num' }}">&larr;&nbsp;Newer Posts</a>
+                {% else %}
+                    <a class="btn btn-primary" href="{{paginator.previous_page_path}}/">&larr;&nbsp;Newer Posts</a>
+                {% endif %}
+            {% else %}
+                <a class="disabled btn btn-primary">&larr;&nbsp;Newer Posts</a>
+            {% endif %}
+
+            {% if paginator.next_page %}
+                <a class="btn btn-primary" href="{{ paginator.next_page_path }}">Older Posts&nbsp;&rarr;</a>
+            {% else %}
+                <a class="disabled btn btn-primary">Older Posts&nbsp;&rarr;</a>
+            {% endif %}          
+        </div>
+    </div>
+</div>

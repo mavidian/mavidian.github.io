@@ -1,0 +1,120 @@
+<!-- NAV -->
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <div class="container-fluid">
+        <a href="{{ site.baseurl }}/" class="navbar-brand">
+            <img src="{{ site.baseurl }}/img/MavLogo_17+name.svg" alt="Mavidian Technologies" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a href="{{ site.baseurl }}/"
+                       class="nav-link{% if page.url == '/' %} active{% endif %}">
+                        Home
+                    </a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <div class="btn-group">
+                        <a class="nav-link{% if page.url == '/dataconveyer/' %} active{% endif %}"
+                           href="{{ site.baseurl }}/dataconveyer/">
+                           Data&nbsp;Conveyer
+                        </a>
+                        <a class="nav-link dropdown-toggle{% if page.url == '/dataconveyer/why-data-conveyer/'
+                                                             or page.url == '/dataconveyer/overview/'
+                                                             or page.url == '/dataconveyer/design-goals/'
+                                                             or page.url == '/dataconveyer/use-cases/'
+                                                             or page.url == '/dataconveyer/tutorial/'
+                                                             or page.url == '/dataconveyer/sample-applications/' %} active{% endif %}"
+                           data-toggle="dropdown">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/why-data-conveyer/"
+                                   class="nav-link{% if page.url == '/dataconveyer/why-data-conveyer/' %} active{% endif %}">
+                                   Why Data&nbsp;Conveyer?
+                                </a>                           
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/overview/"
+                                   class="nav-link{% if page.url == '/dataconveyer/overview/' %} active{% endif %}">
+                                   Overview
+                                </a>                           
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/features/"
+                                   class="nav-link{% if page.url == '/dataconveyer/features/' %} active{% endif %}">
+                                   Features
+                                </a>                           
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/design-goals/"
+                                   class="nav-link{% if page.url == '/dataconveyer/design-goals/' %} active{% endif %}">
+                                   Design Goals
+                                </a>                           
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/use-cases/"
+                                   class="nav-link{% if page.url == '/dataconveyer/use-cases/' %} active{% endif %}">
+                                   Use Cases
+                                </a>                           
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/sample-applications/"
+                                   class="nav-link{% if page.url == '/dataconveyer/sample-applications/' %} active{% endif %}">
+                                   Sample Applications
+                                </a>                           
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ site.baseurl }}/dataconveyer/tutorial/"
+                                   class="nav-link{% if page.url == '/dataconveyer/tutorial/' %} active{% endif %}">
+                                   Tutorial
+                                </a>                           
+                            </li>
+                            <!--<div class="dropdown-divider" ></div>-->
+                            <li class="dropdown-item">
+                                <a href="https://mavidian.github.io/DataConveyer-help/"
+                                   target="_blank"
+                                   class="nav-link">
+                                   Documentation
+                                </a>                           
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link{% if page.url == '/services/' %} active{% endif %}"
+                       href="{{ site.baseurl }}/services/">
+                       Services
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="btn-group">
+                       <a class="nav-link{% if page.url == '/blog/' %} active{% endif %}"
+                          href="{{ site.baseurl }}/blog/">
+                          Blog
+                        </a>
+                        <a class="nav-link dropdown-toggle{% if page.url == '/blog/archive/' %} active{% endif %}"
+                           data-toggle="dropdown">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="nav-link{% if page.url == '/blog/archive/' %} active{% endif %}"
+                                   href="{{ site.baseurl }}/blog/archive/">
+                                   Archive
+                                </a>
+                            </li>
+                        </ul>                  
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link{% if page.url == '/about/' %} active{% endif %}"
+                       href="{{ site.baseurl }}/about/">
+                       About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,11 @@
+.social-links {
+    a {
+        text-decoration: none;
+        padding: 0 0.6rem;
+
+        &:hover {
+            color: $info;
+            cursor: pointer;
+        }
+    }
+}

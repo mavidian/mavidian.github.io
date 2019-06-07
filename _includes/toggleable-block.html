@@ -1,0 +1,14 @@
+<div class="container m-3" id="toggleable-block">
+    <button type="button"
+            class="btn btn-info"
+            data-toggle="collapse"
+            aria-expanded="false"
+            data-target="#collapseTarget{{ include.block-id }}">
+        <span class="collapsed"><i class="fas fa-folder"></i></span>
+        <span class="expanded"><i class="fas fa-folder-open"></i></span>
+        &nbsp;{{ include.block-title}}
+    </button>
+    <div id="collapseTarget{{include.block-id}}" class="collapse pt-3">
+        {{ include.block-body | markdownify }}
+    </div>
+</div>

@@ -1,0 +1,119 @@
+body {
+    background-color: $navbar-back-color;
+}
+
+#main-content {
+    background-color: white;
+    // padding-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+    color: $primary;
+    // padding-top: 0.6rem;
+}
+
+h1 { margin-bottom: 1.8rem; }
+
+h2 { margin-bottom: 1.6rem; }
+
+h3 { margin-bottom: 1.4rem; }
+
+h4 { margin-bottom: 1.2rem; }
+
+h5 { margin-bottom: 1rem; }
+
+li { margin-bottom: 0.6rem; }
+
+// Links
+ a {
+    text-decoration: underline;
+    &:hover {
+        color: $info;
+        text-decoration: none;
+    }     
+}
+
+nav a {  //do not underline links in navbar
+    text-decoration: none;
+}
+
+
+// Screenshot images
+img.screenshot-xl, img.screenshot-lg, img.screenshot-md,
+img.screenshot-sm, img.screenshot-xs, img.screenshot {
+    box-shadow: 0 0 0.12rem gray;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+img.screenshot-xl { width: 900px; }
+img.screenshot-lg { width: 700px; }
+img.screenshot-md { width: 500px; }
+img.screenshot-sm { width: 350px; }
+img.screenshot-xs { width: 200px; }
+
+// Code snippets
+div.highlight {
+    box-shadow: 0 0 0.12rem gray;
+    pre {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+        margin: 2.5rem 0.6rem;
+        line-height: 1.2rem;
+        code {
+            color: $code-text-color;
+        }
+    }
+     // Copy button
+     a.btn-copy-code {
+        color: gray;
+        padding-right: 0.3rem;
+        float: right;
+        background: transparent;
+        border: 0;
+        font-size: 75%;
+        margin-top: -1.9rem;
+        &:hover {
+            cursor: pointer;
+            color: transparentize($color: gray, $amount: 0.4);
+        }
+    }   
+}
+
+blockquote {
+    border: 0.06rem solid gray;
+    border-left: 0.6rem solid gray;
+    border-radius: 0;
+    background: #fcf6e5;
+    font-size: 100%;
+    font-style: italic;
+    margin: 2.5rem;
+    padding: 0 1.2rem;
+}
+
+    blockquote p {
+        margin: 0.6rem 0;
+}
+
+div.fixed-block {
+    width: fit-content;
+    width: -moz-fit-content;
+    max-width: 80%;
+    margin: 1rem 2.5rem;
+    font-family: monospace; 
+    background-color: lightgray;
+    white-space: pre-wrap;
+    border: 0.06rem solid gray;
+    pre {
+        margin: 0.3rem 0.8rem;
+        color: black;
+    }
+}
+
+#in-page-anchor {  // offset in-page links by the navbar height
+    margin-top: -7.5rem;
+    padding-top: 7.5rem;
+    font-size: 0;
+}
