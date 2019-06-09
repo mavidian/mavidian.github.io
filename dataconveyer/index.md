@@ -29,6 +29,6 @@ The following pages provide specifics on Data&nbsp;Conveyer and other related in
 
 Data&nbsp;Conveyer is an open source project. Its source code is located in this [GitHub repository](https://github.com/mavidian/DataConveyer){: target="_blank"}. The corresponding [NuGet package](https://www.nuget.org/packages/DataConveyer/){: target="_blank"} contains executable versions suitable for inclusion in any .NET Standard project (either .NET Framework or .NET Core).
 
-If you would like to see a summary of Data&nbsp;Conveyer in a printed form, these [Data&nbsp;Sheets]({{ "/dataconveyer/DataConveyer_dataSheets_20190529.pdf" | relative_url }}){: target="_blank"} might be of interest to you.
+If you would like to see a summary of Data&nbsp;Conveyer in a printed form, these [Data&nbsp;Sheets]({{ "/files/DataConveyer_dataSheets_20190529.pdf" | relative_url }}){: target="_blank"} might be of interest to you.
 
 If you have questions not answered here or would like to learn more, please contact us by using any of the links below.
