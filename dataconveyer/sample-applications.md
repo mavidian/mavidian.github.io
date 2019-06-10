@@ -62,13 +62,21 @@ A console application to demonstrate how Data&nbsp;Conveyer can be used to summa
 {% endcapture %}
 {% include toggleable-block.html block-id="05" block-title="DataConveyer_SummarizeBmiData" block-body=captured-details %}
 
+<!-- DataConveyer_AggregateTokens -->
+{% capture captured-details %}
+A console application that uses Data&nbsp;Conveyer to accumulate data across multiple input files.
+
+&nbsp;&nbsp;&nbsp;&nbsp;[DataConveyer_AggregateTokens  &nbsp;**Source Code**](https://github.com/mavidian/DataConveyer_AggregateTokens){:target="_blank"}
+{% endcapture %}
+{% include toggleable-block.html block-id="06" block-title="DataConveyer_AggregateTokens" block-body=captured-details %}
+
 <!-- DataConveyer_SavedConfig -->
 {% capture captured-details %}
 A solution that demonstrates saving and restoring Data&nbsp;Conveyer configurations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;[DataConveyer_SavedConfig  &nbsp;**Source Code**](https://github.com/mavidian/DataConveyer_SavedConfig){:target="_blank"}
 {% endcapture %}
-{% include toggleable-block.html block-id="06" block-title="DataConveyer_SavedConfig" block-body=captured-details %}
+{% include toggleable-block.html block-id="07" block-title="DataConveyer_SavedConfig" block-body=captured-details %}
 
 <!-- DataConveyer_CsvToFlat_wasm -->
 {% capture captured-details %}
@@ -78,4 +86,4 @@ A [WebAssembly](https://webassembly.org/){:target="_blank"} that demonstrates ve
 
 &nbsp;&nbsp;&nbsp;&nbsp;[DataConveyer_CsvToFlat_wasm  &nbsp;**Source Code**](https://github.com/mavidian/DataConveyer_CsvToFlat_wasm){:target="_blank"}
 {% endcapture %}
-{% include toggleable-block.html block-id="07" block-title="DataConveyer_CsvToFlat_wasm" block-body=captured-details %}
+{% include toggleable-block.html block-id="08" block-title="DataConveyer_CsvToFlat_wasm" block-body=captured-details %}
