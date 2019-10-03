@@ -20,7 +20,7 @@ IntakeRecordLimit = 180,
 
 *![Limit Reached]({{ "/img/tutorial/Fig5-1.png" | relative_url }}){: .screenshot-lg }*
 
->You may be curious why Data&nbsp;Conveyer stopped after processing 179 records and not 180 records. This is because of the header row, which is included in the record limit, but not in the count of rows processed. You can confirm this by changing the *HeadersInFirstInputRow* setting from true to false (note though that after doing so, Data&nbsp;Conveyer will be unable to properly determine field names and therefore its output will be incorrect).
+>You may be curious why Data&nbsp;Conveyer stopped after processing 179 records, and not 180 records. This is because of the header row, which is included in the record limit, but not in the count of rows processed. You can confirm this by changing the *HeadersInFirstInputRow* setting from true to false, in which case the 180 records will be reported (note though that after doing so, Data&nbsp;Conveyer will be unable to properly determine field names and therefore its output will be incorrect).
 
 <a id="in-page-anchor" name="step5.3">&nbsp;</a>**Step 5.3** Add another setting to the *OrchestratorConfig* object initializer near the top of the *Main* method:
 

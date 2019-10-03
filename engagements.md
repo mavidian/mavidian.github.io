@@ -8,7 +8,6 @@ permalink: /services/engagements.html
 
 The following list contains a sample of prior assignments.
 
-
 {% comment %}
   Each engagment is rendered by toggleable-block.html, which takes 3 parameters:
   block-id - must be unique (to disambiguate data-target values of side by side toggleable buttons)

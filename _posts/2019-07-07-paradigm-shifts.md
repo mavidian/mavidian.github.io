@@ -10,7 +10,7 @@ summary: Things are not necessarily the same as we perceive them.
 
 Back in the 90's, I was working as an IT manager for a health plan that was acquired by one of the large players in the business. As a part of integration efforts, the entire middle management was sent to a 2-day retreat for a series of seminars. The presentations revolved around then-modern [TQM](https://en.wikipedia.org/wiki/Total_quality_management){:target="_blank"} topics. I don't rememember much of them except for one: a short (maybe 20-minute long) documentary about how people perceive things. If my memory serves me well, it was narrated in the great [David Attenborough's style](https://www.youtube.com/watch?v=enu-qR0H_uk){:target="_blank"} and started with this playing cards experiment:
 
-*Watch and memorize the cards shown. You will get a few chances. Click image to start.*
+*Watch and memorize the cards shown. You will get a few chances. Click on image to start.*
 
 <!-- A bit of trickiness here: iframe is overlaid with a picture to avoid spoiling the surprise
      Note that youtube does not allow playing w/o title "Red Spade Experiment" while dailymotion's
@@ -55,11 +55,11 @@ The above statement is very important. When people started buying smaller Japane
 
 Computer Industry is only a few decades old, but has already undergone several major paradigm shifts. The examples are abundant:
 
-* Mainframes <i class="fas fa-caret-right"/> Personal Computers <i class="fas fa-caret-right"/> Mobile Devices
-* Centralized Computing <i class="fas fa-caret-right"/> Client-Server Computing <i class="fas fa-caret-right"/> Cloud Computing
-* Hierarchical Databases <i class="fas fa-caret-right"/> Relational Databases <i class="fas fa-caret-right"/> Big Data
-* Procedural Programming <i class="fas fa-caret-right"/> Object-Oriented Programming <i class="fas fa-caret-right"/> Functional Programming
-* Proprietary Software <i class="fas fa-caret-right"/> Open-Source Software
+* Mainframes <i class="fas fa-arrow-right"/> Personal Computers <i class="fas fa-arrow-right"/> Mobile Devices
+* Centralized Computing <i class="fas fa-arrow-right"/> Client-Server Computing <i class="fas fa-arrow-right"/> Cloud Computing
+* Hierarchical Databases <i class="fas fa-arrow-right"/> Relational Databases <i class="fas fa-arrow-right"/> Big Data
+* Procedural Programming <i class="fas fa-arrow-right"/> Object-Oriented Programming <i class="fas fa-arrow-right"/> Functional Programming
+* Proprietary Software <i class="fas fa-arrow-right"/> Open-Source Software
 
 But perhaps the most interesting stories are about failures when dominating companies were unable to recognize and properly react to paradigm shifts. Examples are again abundant, let me just mention two:
 

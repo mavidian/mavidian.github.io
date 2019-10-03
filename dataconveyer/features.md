@@ -8,7 +8,7 @@ permalink: /dataconveyer/features/
 
 ### General
 
-* Built-in support for various data formats including
+* Built-in support for various data formats including:
   * Delimited values (e.g. CSV)
   * Fixed width fields (flat file),
   * Key-value pairs (keywords)
@@ -43,6 +43,6 @@ permalink: /dataconveyer/features/
 
 * Build-in support for additional data formats, such as HL7 data.
 * Pipelined (cascaded) transformations.
-* Additional transformer types.
+* Additional transformer types:
   * Aggregator
-  * Sorter
+  * Sorter.

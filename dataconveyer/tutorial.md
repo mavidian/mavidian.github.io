@@ -31,5 +31,5 @@ In these 5 lessons, we have barely scratched the surface of functionality offere
 * Record clustering into families of related records, so that the entire family/cluster can be transformed as a unit.
 * Variety of transformation patterns.
 * Parallel Processing to take advantage of multi-processor architectures.
-* Buffering (“backpressure” handling) to control the memory use.
+* Buffering (“backpressure” handling) to control memory use.
 * … and more.

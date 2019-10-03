@@ -99,4 +99,4 @@ There are so many other areas that we can provide value to your business.  We sp
 {% endcapture %}
 {% include toggleable-block.html block-id="12" block-title="More..." block-body=captured-details %}
 
-More related details can be obtained by viewing a sample list of our [Prior Engagements]({{ "/engagements/" | relative_url }}).
+More related details can be obtained by viewing a sample list of our [Prior Engagements]({{ "/services/engagements.html" | relative_url }}).
