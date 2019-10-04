@@ -43,7 +43,7 @@ My understanding of psychology is at most superficial. Hence, my definition is v
 
 * **Automotive Industry**. In the 60's, cars driven in America were typically big, powerful and most notably manufactured in the United States. Japanese cars, despite their comparable quality, were considered unreliable, unatractive and cheap. The oil crisis of the 70's drew attention to the smaller Japanese vehicles, which were quickly proven to be of superior quality to the small sedans manufactured in the US.
 
-* **Watch Industry**. We all know that Switzerland is historically the #1 watch manufacturing nation in the world. Yet, in the 70's, the Swiss watch industry was in a major decline. The reason: electronic movement. Apparently, it was first introduced in Switzerland, but caught no interest of the manufacturers. They simply did not expect demand watches without the traditional mechanical movement.
+* **Watch Industry**. We all know that Switzerland is historically the #1 watch manufacturing nation in the world. Yet, in the 70's, the Swiss watch industry was in a major decline. The reason: electronic movement. Apparently, it was first introduced in Switzerland, but caught no interest of the manufacturers. They simply did not expect demand for watches without the traditional mechanical movement.
 
 Both cases are examples of paradigm shifts. The good news is that US auto-makers as well as Swiss watch-makers recovered after the years of decline. However, not without huge effort and cost to catch-up with competitors and re-build reputation lost.
 
