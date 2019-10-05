@@ -4,6 +4,7 @@ layout: default
 
 <section id="post">
     <div class="container pt-5">
+ 
         <div class="row">
             <div class="col">
                 <h1 class="post-title">{{ page.title }}</h1>
@@ -14,6 +15,25 @@ layout: default
                     {{ content }}
                 </article>
             </div>
+        </div>        
+
+        <div id="comments">
+            <hr>           
+            <p class="utterances-message">
+                Comments on this post are handled by <a href="https://utteranc.es/">utteranc.es</a>, an open-source, lightweight commenting system that uses <a href="https://github.com/mavidian/mavidian.github.io/issues/">GitHub issues</a>.
+                To leave a comment, a GitHub account is needed and also <a href="https://utteranc.es/">utteranc.es</a> must be authorized to post an issue on your behalf.
+                This can be done by clicking the "Sign in to comment" button.
+                No advertising or user tracking will be used.
+            </p>
+            <script src="https://utteranc.es/client.js"
+                repo="mavidian/mavidian.github.io"
+                issue-term="pathname"
+                label="Blog Comment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+            </script>       
         </div>
+
     </div>
 </section>
