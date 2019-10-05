@@ -25,4 +25,26 @@
         margin-bottom: 2.5rem;
     }
 
+    #comments {
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+        .utterances-message {
+            font-size: 75%;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        hr {
+            border-top: 3px;
+            border-top-style: ridge;
+            margin-bottom: 0;
+        }
+        .utterances {
+           margin: 0;
+        }
+        .utterances-frame {
+            margin: 0;
+        }
+    }
+
 }
