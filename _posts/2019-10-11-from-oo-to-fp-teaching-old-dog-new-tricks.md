@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From OOP to FP - Teaching Old Dog New Tricks
+title: From OOP to FP - Teaching an Old Dog New Tricks
 author: Wojtek Dziegielewski
 date: 2019-10-11 12:00:00 +0000
 summary: My journey of transitioning from a seasoned object-oriented developer to embracing functional programming principles.
