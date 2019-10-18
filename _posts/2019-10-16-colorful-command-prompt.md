@@ -120,7 +120,7 @@ Some explanation is in order here. The mysterious  character is the escape char
 
 We're also seeing some strange sequences following the escape character. How do we know that using `[0;92m` will set our text color to green? There are a few resources that you may need to google for. I found [this file provided by Michele Locati](https://gist.github.com/mlocati/fdabcaeb8071d5c75a2d51712db24011/revisions#diff-d906085db1bccb47649f0dd807e11e83){:target="_blank"} very helpful. It makes the selection of a proper character sequence a breeze.
 
-The basic idea is that each sequence starts with the escape character followed by an open bracket. It then contains up to 16 parameters separated by semicolon. The sequence ends with an `m` character. So, for example, our `[0;92m` contains 2 parameters: 0 means *"reset the console to its original state"* and 92 means *"set text color to green"*. The first parameter (0) is relevant in cases where text attributes other than color (e.g. underline) have been set previously. Feel free to experiment with different control character sequences.
+The basic idea is that each sequence starts with the escape character followed by an open bracket. It then contains up to 16 parameters separated by semicolons. The sequence ends with an `m` character. So, for example, our `[0;92m` contains 2 parameters: 0 means *"reset the console to its original state"* and 92 means *"set text color to green"*. The first parameter (0) is relevant in cases where text attributes other than color (e.g. underline) have been set previously. Feel free to experiment with different control character sequences.
 
 ## No Extra Lines
 
@@ -137,7 +137,7 @@ REM Reset text color
 echo | set /p=[0m
 ```
 
-A quick explanation on this trick in which the output from `echo` command is "piped" into the `set` command. The control character sequences are sent as a prompt by the `set` command, which expects an entry to be made to the console. This prompt is immediately satisfied by the line-feed character provided by the `echo` command and importantly the line-feed is not echoed to the screen. If you're curious what variable is being set by the `set` command above, the answer is none. While it is legal to leave off the variable name (the part between `/p` and the equal sign), but no variable is set in this case. But, we're veering off topic here.
+A quick explanation on this trick in which the output from `echo` command is "piped" into the `set` command. The control character sequences are sent as a prompt by the `set` command, which expects an entry to be made to the console. This prompt is immediately satisfied by the line-feed character provided by the `echo` command and importantly the line-feed is not echoed to the screen. If you're curious what variable is being set by the `set` command above, the answer is none. While it is OK to leave off the variable name (the part between `/p` and the equal sign), no variable is set in this case. But, we're veering off topic here.
 
 Now our output looks like the original one, but in color:
 
@@ -145,7 +145,7 @@ Now our output looks like the original one, but in color:
 
 ## Refinements
 
-We now have the output we want, but our code can still be refined. All revisions presented below will result in the same output as in the last image above.
+We now have the output we want, but our code can still be refined. All revisions presented below will result in the same output as on the last image above.
 
 First, using `echo` and piping to supply data requested by `set` command is awkward and inefficient. Piping can be avoided by instead having `set` read from `nul`, i.e. a special device that yields EOF (end of file) immediately. So, our code might look like this instead (and still produce identical output):
 
