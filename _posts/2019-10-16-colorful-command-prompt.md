@@ -53,7 +53,7 @@ pause
 <!-- FirstTask.bat -->
 {% capture captured-details %}
 
-```text
+```bat
 REM This is a simulated output from an executable program, e.g. a .NET console application
 echo The first task is starting.
 echo There were 500 records processed with no errors.
@@ -66,7 +66,7 @@ echo The first task has completed processing in 0.001s.
 <!-- SecondTask.bat -->
 {% capture captured-details %}
 
-```text
+```bat
 REM This is a simulated output from an executable program, e.g. a .NET console application
 echo The second task is starting.
 echo Error occurred in record# 344: Invalid record type.
@@ -85,7 +85,7 @@ When we double-click on out `JobWithTwoTasks.bat` file, our job will get execute
 
 When looking at this last output, it's difficult to see what happened, in particular which part of the output was produced by which task. It seems as if the best we can do is to add some empty lines to separate sections of the output:
 
-```text
+```bat
 echo.
 call FirstTask.bat
 echo.
@@ -101,7 +101,7 @@ Upon making this change to `JobWithTwoTasks.bat`, our output looks like this:
 
 When on Windows 10, we can do better. Basically, any part of the display can have it's own color. So, if we add some special characters to the output:
 
-```text
+```bat
 REM Set text color to green
 echo [0;92m
 call FirstTask.bat
@@ -126,7 +126,7 @@ The basic idea is that each sequence starts with the escape character followed b
 
 Now that the tasks are displayed in different colors, we may no longer want the blank lines between them. To eliminate these extra lines, we need the `echo` command to suppress the line-feed character at end. There is a fairly known trick to do that:
 
-```text
+```bat
 REM Set text color to green
 echo | set /p=[0;92m
 call FirstTask.bat
@@ -149,7 +149,7 @@ We now have the output we want, but our code can still be refined. All revisions
 
 First, using `echo` and piping to supply data requested by `set` command is awkward and inefficient. Piping can be avoided by instead having `set` read from `nul`, i.e. a special device that yields EOF (end of file) immediately. So, our code might look like this instead (and still produce identical output):
 
-```text
+```bat
 REM Set text color to green
 <nul set /p=[0;92m
 call FirstTask.bat
@@ -162,7 +162,7 @@ REM Reset text color
 
 You may not like the fact that a non-printable character (``, i.e. escape) is proliferated throughout the script. We can make our code easier to read by assigning the escape characters to a variable and using this variable afterwards. The code below again provides the same output as before.
 
-```text
+```bat
 REM ESC character (Ascii code 27)
 set esc=
 
@@ -178,7 +178,7 @@ REM Reset text color
 
 What if you don't like the escape character to be present in your script at all? It can be done too! Something like this:
 
-```text
+```bat
 call SetTextColor green
 call FirstTask.bat
 
@@ -193,7 +193,7 @@ We have now delegated handling of the control character sequences to another bat
 <!-- SetTextColor.bat -->
 {% capture captured-details %}
 
-```text
+```bat
 @echo off
 REM A script to set the color of text printed to the console.
 REM Intended to be called from other .bat files like so:
