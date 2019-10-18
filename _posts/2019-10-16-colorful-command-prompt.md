@@ -33,7 +33,7 @@ Let's assume we have a job (batch file) that calls two console applications, one
 <!-- JobWithTwoTasks.bat-->
 {% capture captured-details %}
 
-```text
+```bat
 @echo off
 cls
 
