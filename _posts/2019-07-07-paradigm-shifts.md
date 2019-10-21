@@ -10,19 +10,22 @@ summary: Things are not necessarily the same as we perceive them.
 
 Back in the 90's, I was working as an IT manager for a health plan that was acquired by one of the large players in the business. As a part of integration efforts, the entire middle management was sent to a 2-day retreat for a series of seminars. The presentations revolved around then-modern [TQM](https://en.wikipedia.org/wiki/Total_quality_management){:target="_blank"} topics. I don't rememember much of them except for one: a short (maybe 20-minute long) documentary about how people perceive things. If my memory serves me well, it was narrated in the great [David Attenborough's style](https://www.youtube.com/watch?v=enu-qR0H_uk){:target="_blank"} and started with this playing cards experiment:
 
-*Watch and memorize the cards shown. You will get a few chances. Click on image to start.*
+*Watch and memorize the cards shown. You will get a few chances. Click on the image to start.*
 
-<!-- A bit of trickiness here: iframe is overlaid with a picture to avoid spoiling the surprise
+<!-- A bit of trickiness here: iframe is overlaid with a picture to avoid spoiling the surprise.
      Note that youtube does not allow playing w/o title "Red Spade Experiment" while dailymotion's
      thumbnail reveals the red spade card. Hence, we're combining the video from dailymotion with
-     the thumbnail from youtube.-->
+     the thumbnail from youtube.
+     Notice that the player cannot be resized once video started. -->
 
-<div onclick="play();" id="vidwrap" style="height:270px;width:480px;background: black url('https://img.youtube.com/vi/yFYBY_YUH5I/hqdefault.jpg') no-repeat center;overflow:hidden;cursor:pointer;"></div>
+<div onclick="play();" id="vidwrap" style="height:56.25vw; max-height:270px; max-width:480px;background: black url('https://img.youtube.com/vi/yFYBY_YUH5I/hqdefault.jpg') no-repeat center;overflow:hidden;cursor:pointer;"></div>
 <script type="text/javascript">
     function play(){
-        document.getElementById('vidwrap').innerHTML = '<iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x2pxpnc?ui-start-screen-info=0&ui-logo=0&queue-enable=0&autoplay=1&mute=0" allowfullscreen allow="autoplay"></iframe>';
+        var vidwrap = document.getElementById('vidwrap');
+        vidwrap.style.backgroundImage = "none";
+        vidwrap.innerHTML = '<iframe frameborder="0" width="' + vidwrap.offsetWidth + '" height="' + vidwrap.offsetHeight + '" src="https://www.dailymotion.com/embed/video/x2pxpnc?ui-start-screen-info=0&ui-logo=0&queue-enable=0&autoplay=1&mute=0" allowfullscreen allow="autoplay"></iframe>';
     }
-</script> 
+</script>
 <p/>
 
 If you didn't see this experiment before, chances are you were caught by surprise. This is because our minds are used to seeing the card suits in given colors and spades are expected to be black, not red. In other words, one of our cards violated the paradigm that a playing card suit can only be a spade, a heart, a diamond or a club.
