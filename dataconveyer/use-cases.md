@@ -21,13 +21,13 @@ __body__
 {% include toggleable-block.html block-id="__id__" block-title="__title__" block-body=captured-details %}
 {% endcomment %}
 
-<!-- Scenario One: Rapic Implementation of New Business -->
+<!-- Scenario One: Rapid Implementation of New Business -->
 {% capture captured-details %}
 An insurance company signs a new deal with a 3rd party vendor. The deal necessitates data exchange between the enterprises, such as import/export of membership data, claim data, and the like.
 
 Data&nbsp;Conveyer allows rapid implementation of a production-ready solution to translate data between vendor specific and internal formats. Specifically, such implementation becomes a matter of days or weeks, as opposed to months when using traditional techniques. Furthermore, a proof of concept prototype of inbound or outbound data exchange can be provided in a matter of hours, which may play an important role in project planning.
 {% endcapture %}
-{% include toggleable-block.html block-id="01" block-title="Scenario One: Rapic Implementation of New Business" block-body=captured-details %}
+{% include toggleable-block.html block-id="01" block-title="Scenario One: Rapid Implementation of New Business" block-body=captured-details %}
 
 <!-- Scenario Two: Integration Into Existing Infrastructure -->
 {% capture captured-details %}

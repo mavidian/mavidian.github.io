@@ -40,7 +40,7 @@ permalink: /dataconveyer/features/
 * Custom routing rules.
 * Variety of settings to fine tune data formatting process.
 
-### Planned for Fulture Releases
+### Planned for Future Releases
 
 * Build-in support for additional data formats, such as HL7 data.
 * Pipelined (cascaded) transformations.
