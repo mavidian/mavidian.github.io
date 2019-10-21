@@ -2,6 +2,9 @@
 
     // Collapsable section title
     button { // anchor look-alike
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
         background:none !important;
         border:none; 
         padding:0 !important;
