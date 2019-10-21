@@ -16,7 +16,8 @@ Back in the 90's, I was working as an IT manager for a health plan that was acqu
      Note that youtube does not allow playing w/o title "Red Spade Experiment" while dailymotion's
      thumbnail reveals the red spade card. Hence, we're combining the video from dailymotion with
      the thumbnail from youtube.
-     Notice that the player cannot be resized once video started. -->
+     Notice that the player cannot be resized once video has started.
+     Also notice on Safari, the autoplay does not work, which spoils the surprise. -->
 
 <div onclick="play();" id="vidwrap" style="height:56.25vw; max-height:270px; max-width:480px;background: black url('https://img.youtube.com/vi/yFYBY_YUH5I/hqdefault.jpg') no-repeat center;overflow:hidden;cursor:pointer;"></div>
 <script type="text/javascript">
