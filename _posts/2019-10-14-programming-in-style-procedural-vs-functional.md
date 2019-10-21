@@ -190,6 +190,7 @@ Processing completed in 0.007s
 ```
 
 Let's say we're not after all individuals. Instead, we're interested only in millennials, which we assume (as of 2019) to be those between the ages of 23 and 37.
+
 <!-- Average score for millennials (procedural) -->
 {% capture captured-details %}
 

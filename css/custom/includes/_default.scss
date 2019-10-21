@@ -37,6 +37,10 @@ nav a {  //do not underline links in navbar
     text-decoration: none;
 }
 
+//Do not let images widen contents; it would shrink
+// page, incl. navabar on mobile browsers. 
+img { max-width: 100%; }
+iframe { max-width: 100%; }
 
 // Screenshot images
 img.screenshot-xl, img.screenshot-lg, img.screenshot-md,
