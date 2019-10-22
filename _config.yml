@@ -10,6 +10,8 @@ url: http://www.mavidian.com
 baseurl: ""
 # repo: "https://github.com/mavidian/.."
 
+timezone: America/New_York
+
 # Build settings:
 permalink: /:year/:month/:day/:title:output_ext
 sass:
