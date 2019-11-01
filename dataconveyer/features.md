@@ -101,7 +101,7 @@ Data&nbsp;Conveyer is a standalone executable. As such, it gets deployed by a si
 
 <!-- Platform Independence -->
 {% capture captured-details %}
-Data&nbsp;Conveyer can be deployed onto any platform that supports .NET Standard 2.0. This means that it is not Windows-specific, but equally applies to Linux, Mac OS and other systems as well. Solutions based on Data&nbsp;Conveyer can be easily containerized, for example using [Docker](https://www.docker.com/){:target="_blank"}. What's more, with a new [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/client){:target="_blank"} technology, a Data&nbsp;Conveyer based solution can be compiled into a [WebAssembly](https://webassembly.org/){:target="_blank"} and as such reside inside a web browser. Please refer to [Sample Applications]({{ site.baseurl }}/dataconveyer/sample-applications/) for an example of such solution.
+Data&nbsp;Conveyer can be deployed onto any platform that supports .NET Standard 2.0. This means that it is not Windows-specific, but equally applies to Linux, Mac OS and other systems as well. Solutions that involve Data&nbsp;Conveyer can be easily containerized, for example using [Docker](https://www.docker.com/){:target="_blank"}. What's more, with a new [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/client){:target="_blank"} technology, a Data&nbsp;Conveyer based solution can be compiled into a [WebAssembly](https://webassembly.org/){:target="_blank"} and as such reside inside a web browser. Please refer to [Sample Applications]({{ site.baseurl }}/dataconveyer/sample-applications/) for an example of such solution.
 {% endcapture %}
 {% include toggleable-block.html block-id="07" block-title="Platform Independence" block-body=captured-details %}
 
