@@ -393,7 +393,7 @@ Console.WriteLine($"Average score for the {infoForMillennials.Count()} Millennia
 {% endcapture %}
 {% include toggleable-block.html block-id="13" block-title="Refactored Main method (functional)" block-body=captured-details %}
 
-That's it! Our program now yields the same output, but much faster. The processing time is about the same as for the refactored procedures code:
+That's it! Our program now yields the same output, but much faster. The processing time is about the same as for the refactored procedural code:
 
 ```none
 Average score for the 15 Millennials is 666.3
