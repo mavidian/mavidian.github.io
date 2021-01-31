@@ -95,3 +95,20 @@ A Web API solution that demonstrates how Data&nbsp;Conveyer transformation can b
 &nbsp;&nbsp;&nbsp;&nbsp;[DataConveyer_Dockerized270Parser  &nbsp;**Source Code**](https://github.com/mavidian/DataConveyer_Dockerized270Parser){:target="_blank"}
 {% endcapture %}
 {% include toggleable-block.html block-id="09" block-title="DataConveyer_Dockerized270Parser" block-body=captured-details %}
+
+<!-- DataConveyer_HierarchicalJsonToCsv -->
+{% capture captured-details %}
+A console application to convert JSON data with multiple nesting levels to and from 2-dimentional CSV data.
+It illustrates the mechanism employed by Data&nbsp;Conveyer to flaten hierarchical JSON data.
+
+&nbsp;&nbsp;&nbsp;&nbsp;[DataConveyer_HierarchicalJsonToCsv  &nbsp;**Source Code**](https://github.com/mavidian/DataConveyer_HierarchicalJsonToCsv){:target="_blank"}
+{% endcapture %}
+{% include toggleable-block.html block-id="10" block-title="DataConveyer_HierarchicalJsonToCsv" block-body=captured-details %}
+
+<!-- DataConveyer_JsonHierarchy -->
+{% capture captured-details %}
+A console application that demonstrates some ways Data&nbsp;Conveyer can transform hierarchical JSON data. This sample shows how the same data can be expressed in JSON using different nesting hierarchies.
+
+&nbsp;&nbsp;&nbsp;&nbsp;[DataConveyer_JsonHierarchy  &nbsp;**Source Code**](https://github.com/mavidian/DataConveyer_JsonHierarchy){:target="_blank"}
+{% endcapture %}
+{% include toggleable-block.html block-id="11" block-title="DataConveyer_JsonHierarchy" block-body=captured-details %}
