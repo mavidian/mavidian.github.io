@@ -10,13 +10,13 @@ Imagine a SOAP/WSDL service that has been working reliably for years. You have a
 application that consumes this service using a [WCF Service Reference](https://docs.microsoft.com/en-us/dotnet/core/additional-tools/wcf-web-service-reference-guide).
 It all works well until one day your application suddenly
 crashes with an inexplicable error, such as a [NullReferenceException](https://docs.microsoft.com/en-us/dotnet/api/system.nullreferenceexception).
-After long troubleshooting, you notice a problem in the service response: the proxy class representing the service response does not contain the expected data. What happened?
+After long troubleshooting, you notice a problem with the service response: the response proxy class does not contain the expected data. What happened?
 
 ## Is the service telling the truth?
 
 A SOAP service is generally accompanied by a service definition, i.e. a [WSDL](https://en.wikipedia.org/wiki/Web_Services_Description_Language) document.
 This definition is used by the service consumer to prepare the service requests and interpret its responses. This is exactly what the WCF proxy classes (auto-generated upon setting the Service Reference) are designed to do.
-However, there is nothing that forces the service to act in a way defined in the WSDL document. The service vendor may change the service behavior without updating its definition. Or, the Service Reference in the consumer application do not get updated to the new definition. Or, perhaps non-compliant response occurs only in rare edge cases that never made to the WSDL. Or...
+However, there is nothing that forces the service to act according to the service definition. The service vendor may change the service behavior without updating the WSDL document. Or, the Service Reference in the consumer application do not get updated to the new definition. Or, perhaps a non-compliant response occurs only in rare edge cases that never made to the WSDL. Or...
 
 The bottom line is tha the service may not respond exactly as prescribed in its WSDL document. If this happens,
 your consumer application is broken.
@@ -46,7 +46,7 @@ Viewing data in the Visual Studio debugger is one thing. But how to access the d
 
 > “The ExtensionDataObject type contains no public methods or properties. Thus, it is impossible to get direct access to the data stored inside the ExtensionData property.”
 
-Here is an example on how to accomplish the “impossible”. It uses reflection and is quite brittle. Note that not only the members of the ExtensionDataObject class are non-public, but so are the types of these members.  The code below is based on the sample code from the [article describing the ExtensionDataObject](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.extensiondataobject). Tt should also work on the actual service responses.
+Here is an example on how to accomplish the “impossible”. The code below is based on the sample code from the [article describing the ExtensionDataObject](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.extensiondataobject) and works in .NET Core 3.1 as well as .NET 5.0. It should also work on the actual service responses. This sample code uses reflection and is quite brittle. Note that not only the members of the ExtensionDataObject class are non-public, but so are the types of these members. There is no guarantee that future .NET version will have the same internal implementations.
 
 ```csharp
 using System.Runtime.Serialization;
@@ -70,8 +70,8 @@ using System.Reflection;
 
 ## Conclusion
 
-When WCF is used to consume SOAP Services, the ExtensionData property comes handy in cases where the consumer code becomes outdated due to a service definition mismatch. It prevents data loss during round-tripping, even when the consumer code is unaware of some data elements.
-However, the contents of the ExtensionDataObject class are not easily accessible. These common sense alternatives are generally preferred:
+When WCF is used to consume SOAP Services, the ExtensionData property comes handy in cases where the consumer code becomes outdated due to a service definition mismatch. The property prevents data loss during round-tripping by holding those data elements that the consumer is unaware of.
+However, the contents of the ExtensionDataObject class are not easily accessible. These common-sense alternatives are generally preferred:
 
 * Obtain the current version of the service definition (WSDL), use it to set the Service Reference and rebuild your service consumer application.
 
